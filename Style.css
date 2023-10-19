@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@850&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.origin{
+    width: 100%;
+}
+.cont1{
+    width: 100%;/* Screen height*/
+}
+.navbar{
+    position: relative;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 90px;
+    z-index: 2;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    
+}
+.right a{
+    text-decoration: none;
+    font-size: 1.05vw;
+    color: black;
+    font-weight: 500;
+}
+.right i{
+    font-size: 1.4vw;
+    font-weight: 500;
+    cursor: pointer;
+    z-index: 2;
+}
+.secondDiv{
+    width: 100%;
+    padding: 13vw 14vw;
+    justify-self: center;
+
+}
+.secondDiv h1{
+    font-size: 2vw;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+}
+.divChild{
+    display: flex;
+    justify-content: space-between;
+}
+.divChild h1{
+    font-family: 'Noto Sans', sans-serif;
+    word-spacing: 20px;
+    font-size: 6.2vw;
+    /* font-weight: 800; */
+    line-height: 1;
+    color: transparent;
+    letter-spacing: -3px;
+    -webkit-text-stroke: 1.5px black;
+    margin-top: 8px;
+    gap: 20px;
+    transition: 0.3s;
+}
+.divChild h1:hover{
+    color: black;
+}
+.par1{
+    padding: 4vw 14vw;
+}
+.par1 p{
+    font-size: 1.3vw;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    word-spacing: 2px;
+    font-weight: 500;
+    width: 50vw;
+    
+}
+*::selection{
+    color: white;
+    background-color: black;
+}
+.cont2{
+    padding: 8vw 14vw;
+}
+.heading h1{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    line-height: 1;
+    font-size: 3vw;
+    font-weight: 300;
+}
+.heading h1:nth-child(2){
+    font-family: 'Noto Sans', sans-serif;
+    color: transparent;
+    -webkit-text-stroke: 1.5px black;
+    
+}
+.fixedSroller{
+    width: 100%;
+    margin-top: 80px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+.leftScroll{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    width: 48%;
+    height: inherit;
+    overflow: hidden;
+
+}
+.leftelem{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 15px; */
+    margin-left: 1vw;
+    font-family: 'Nunito', sans-serif;
+}
+.leftelem h3{
+    font-size: 1.6vw;
+    font-weight: bolder;
+}
+.leftelem h5{
+    font-weight: 600;
+    color: rgb(99, 98, 98);
+    font-size: 1vw;
+}
+.leftelem h1{font-size: 2.7vw;}
+.rightScroll{
+   
+    width: 48%;
+    height: inherit;
+}
+.rightScroll .viewImages{
+    width: 95%;
+    height: 95%;
+    background-color: bisque;
+    
+}
+.rightScroll .viewImages img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.projects button{
+    height: 7.5vh;
+    width: 12vw;
+    font-size: 1vw;
+    font-weight: 600;
+    border-radius: 2vw;
+    border: 2px solid rgb(219, 217, 217);
+    background-color: white;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    /* transition: 1s; */
+    margin: 2vh 0;
+}
+.DevAndRes{
+    width: 100%;
+    margin-top: 12vh;
+    font-family: 'Nunito', sans-serif;
+}
+.DevAndRes h1{
+    letter-spacing: -1px;
+    width: 40%;
+    font-size: 3vw;
+    line-height: 1;
+    margin-bottom: 2.5%;
+    font-weight: 600;
+}
+.DevAndRes h4{
+    width: 48%;
+    font-size:1.2vw ;
+}
+.cont3{
+    width: 100%;
+    /* padding: 3vw 8vw; */
+    font-family: 'Nunito', sans-serif;
+    margin-top: -4%;
+}
+.cardHolder{
+    
+    padding: 3vw 8vw;
+    display: flex;
+    gap: 2%;
+    height: 100%;
+}
+.card{
+    display: grid;
+    grid-template-rows: 60% 10% 30%;
+    gap: 2%;
+    width: 100%;
+    height: 55vh;
+}
+.card .post{
+    grid-row-start: 1;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.card .post img{
+    width: 100%;
+    height: 100%;
+}
+.card button{
+    width: 30%;
+    height: 75%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(245, 243, 243);
+    border-radius: 3vw;
+    margin: 6% 4%;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+
+}
+.card h3{
+    margin: 8% 0;
+}
+.resource{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resource button{
+    height: 35%;
+    width: 12%;
+    border-radius: 3.5vh;
+    font-weight:900;
+    font-size: 1vw;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    background-color: rgb(245, 243, 243);
+    
+}
+.cont4Head{
+    margin-left: 8.5vw;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 4vw;
+    font-size: 1.6vw;
+    font-weight: 700;
+    width: 20vw;
+    line-height: 1;
+}
+.cont4Post{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+    padding-left: 5vw;
+    font-family: 'Nunito', sans-serif;
+
+}
+.large{
+    height: 100%;
+    width: 19%;
+    display: grid;
+    grid-template-rows: 60% 10% 30%;
+    
+}
+.large .postImg{
+    grid-row-start: 1;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.large .postImg img{
+    width: 100%;
+    height: 100%;
+}
+.large h4{
+    margin-top: 2vh;
+    font-weight: 800;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+}
+.large h4 span{
+    margin-right: 5px;
+    font-weight: 400;
+}
+.large .postCont{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    margin-top: 2vh;
+}
+.small{
+    height: 80%;
+    width: 23%;
+    display: grid;
+    grid-template-rows: 60% 10% 30%;
+    
+}
+.small .postImg{
+    grid-row-start: 1;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.small .postImg img{
+    width: 100%;
+    height: 100%;
+}
+.small h4{
+    margin-top: 2vh;
+    font-weight: 600;
+    font-size: 1.1vw;
+    letter-spacing: 1px;
+}
+.small h4 span{
+    margin-right: 8px;
+    font-weight: 400;
+}
+.small .postCont{
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 300;
+    margin-top: 3vh;
+}
+#circle{
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 1vw;
+    height: 1vw;
+    background-color: rgb(28, 46, 46);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.4s;
+
+}
